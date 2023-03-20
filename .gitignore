@@ -1,0 +1,9 @@
+---Miscellaneous Files
+*.DS_Store
+*.idea
+*.egg-info
+*.venv
+*__pycache__
+*scripts
+*.ipynb_checkpoints
+/dist
