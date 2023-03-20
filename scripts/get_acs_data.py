@@ -167,7 +167,7 @@ def extract_acs_data(api_key):
                 'household_3_or_more_vehicles_available_percent'
                 ]
 
-    years = ['2022']
+    years = ['2018']
 
     census_output = pandas.DataFrame()
 
@@ -257,11 +257,4 @@ def extract_acs_data(api_key):
     census_output.replace(-6666666.66, pandas.NA, inplace=True)
 
     return census_output
-
-def main():
-    extract_acs_data(api_key)
-
-if __name__ == "__main__":
-    ### ACS API Key is a shared resource for the DS team
-    api_key = os.environ.get('ACS_API_KEY')
 
